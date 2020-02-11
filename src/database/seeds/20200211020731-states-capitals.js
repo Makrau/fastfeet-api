@@ -1,0 +1,198 @@
+const uuid = require('uuid/v4');
+
+module.exports = {
+  up: queryInterface => {
+    return queryInterface.bulkInsert(
+      'cities',
+      [
+        {
+          id: uuid(),
+          name: 'Rio Branco',
+          state_id: 'AC',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Maceió',
+          state_id: 'AL',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Macapá',
+          state_id: 'AP',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Manaus',
+          state_id: 'AM',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Salvador',
+          state_id: 'BA',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Fortaleza',
+          state_id: 'CE',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Brasília',
+          state_id: 'DF',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Goiânia',
+          state_id: 'GO',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'São Luís',
+          state_id: 'MA',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Cuiabá',
+          state_id: 'MT',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Campo Grande',
+          state_id: 'MS',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Belo Horizonte',
+          state_id: 'MG',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Belém',
+          state_id: 'PA',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'João Pessoa',
+          state_id: 'PB',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Curitiba',
+          state_id: 'PR',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Recife',
+          state_id: 'PE',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Teresina',
+          state_id: 'PI',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Rio de Janeiro',
+          state_id: 'RJ',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Natal',
+          state_id: 'RN',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Porto Alegre',
+          state_id: 'RS',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Porto velho',
+          state_id: 'RO',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Boa Vista',
+          state_id: 'RR',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Florianópolis',
+          state_id: 'SC',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'São Paulo',
+          state_id: 'SP',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Aracaju',
+          state_id: 'SE',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: uuid(),
+          name: 'Palmas',
+          state_id: 'TO',
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+      ],
+      {}
+    );
+  },
+
+  down: queryInterface => {
+    return queryInterface.bulkDelete('state_ids', null, {});
+  },
+};
